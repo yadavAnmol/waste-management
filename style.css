@@ -49,7 +49,7 @@ body {
 }
 
 .logo {
-    height: 40px;
+    height: 58px;
 }
 
 .main-nav a {
@@ -61,15 +61,15 @@ body {
 }
 
 .main-nav a.active, .main-nav a:hover {
-    color: var(--accent);
+    color: #0D9488;
 }
 
 /* Hamburger menu */
 .hamburger {
     display: none; /* Hide on desktop */
     position: relative;
-    width: 2.5rem; /* Increased width for better click area */
-    height: 2.5rem; /* Increased height */
+    width: 2.7rem; /* Increased width for better click area */
+    height: 2.7rem; /* Increased height */
     background: transparent;
     border: none;
     cursor: pointer;
@@ -85,7 +85,7 @@ body {
 
 .hamburger::before {
     content: '⋮';
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     color: var(--text-primary);
     position: absolute;
     top: 50%;
@@ -113,7 +113,7 @@ body {
 .hero-text h1 {
     font-size: 3rem;
     margin-bottom: 1rem;
-    color: var(--accent-dark);
+    color: #086d65;
 }
 
 .hero-text p {
@@ -132,7 +132,7 @@ body {
 /* Buttons */
 .btn {
     display: inline-block;
-    background: var(--accent);
+    background: #0D9488;
     color: #fff;
     padding: 0.8rem 2rem;
     border: none;
@@ -143,7 +143,7 @@ body {
 }
 
 .btn:hover {
-    background: var(--accent-dark);
+    background: #046960;
     transform: translateY(-2px);
 }
 
@@ -189,7 +189,7 @@ body {
 }
 
 .card h4 {
-    color: var(--accent);
+    color: #0D9488;
     margin-bottom: 0.5rem;
 }
 
@@ -298,7 +298,7 @@ body {
 }
 
 .about-details h3 {
-    color: var(--accent);
+    color: #0D9488;
     margin-bottom: 1rem;
 }
 
@@ -319,6 +319,7 @@ body {
 
 .contact-page h2 {
     margin-bottom: 1rem;
+    color: #0D9488;
 }
 
 .contact-page p {
@@ -329,6 +330,10 @@ body {
 .contact-form {
     display: grid;
     gap: 1rem;
+    padding: 26px;
+    border: 2px solid #e5e7eb;
+    border-radius: var(--border-radius);
+    background: var(--card);
 }
 
 .contact-form label {
@@ -342,6 +347,13 @@ body {
     border-radius: 8px;
     font-family: inherit;
     font-size: 1rem;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form input:focus, .contact-form textarea:focus {
+    outline: none;
+    border-color: #0D9488; 
+    border: 2.5px solid #0D9488;           
 }
 
 .contact-form textarea {
