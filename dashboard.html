@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Dashboard — BrainBin</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <img src="logos/logo.jpg" alt="Logo" class="logo" />
+        <button
+          class="hamburger"
+          id="hamburger-btn"
+          aria-label="Toggle navigation menu"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <nav class="main-nav" id="main-nav">
+          <a href="index.html">Home</a>
+          <a href="dashboard.html" class="active">Dashboard</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container dashboard-main">
+      <h2>System Dashboard</h2>
+
+      <section class="status-cards">
+        <div class="status-card">
+          <h4>Dry Bin</h4>
+          <div class="status-indicator" id="dry-status">Loading...</div>
+        </div>
+        <div class="status-card">
+          <h4>Wet Bin</h4>
+          <div class="status-indicator" id="wet-status">Loading...</div>
+        </div>
+        <div class="status-card">
+          <h4>Metal Bin</h4>
+          <div class="status-indicator" id="metal-status">Loading...</div>
+        </div>
+        <div class="status-card">
+          <h4>Unknown</h4>
+          <div class="status-indicator" id="unknown-status">Loading...</div>
+        </div>
+        <div class="status-card">
+          <h4>Microcontroller</h4>
+          <div class="status-indicator" id="mc-status">Loading...</div>
+        </div>
+      </section>
+
+      <section class="charts">
+        <div class="chart-card">
+          <h4>Waste Distribution</h4>
+          <canvas id="pieChart"></canvas>
+        </div>
+        <div class="chart-card">
+          <h4>Weekly Report (kg)</h4>
+          <canvas id="barChart"></canvas>
+        </div>
+        <div class="chart-card">
+          <h4>Sensor Readings (simulated)</h4>
+          <canvas id="lineChart"></canvas>
+        </div>
+      </section>
+
+      <section class="controls">
+        <button id="refreshBtn" class="btn outline">Refresh Data</button>
+        <button id="toggleMC" class="btn">Toggle Microcontroller</button>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>© <span id="year2"></span> BrainBin</div>
+        <div class="socials">Live simulation</div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

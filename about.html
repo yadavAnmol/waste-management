@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>About — BrainBin</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <img src="logos/logo.jpg" alt="Logo" class="logo" />
+        <button
+          class="hamburger"
+          id="hamburger-btn"
+          aria-label="Toggle navigation menu"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <nav class="main-nav" id="main-nav">
+          <a href="index.html">Home</a>
+          <a href="dashboard.html">Dashboard</a>
+          <a href="about.html" class="active">About</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container about-page">
+      <h2>About the Project</h2>
+      <p class="about-intro">
+        This Smart Waste Management System is designed to automate the
+        segregation of household and commercial waste, promoting efficient
+        recycling and a cleaner environment. By combining cutting-edge sensors
+        and machine vision, our system provides a reliable and autonomous
+        sorting solution.
+      </p>
+
+      <div class="about-details">
+        <section>
+          <h3>Hardware</h3>
+          <ul>
+            <li>**Microcontrollers:** Arduino Mega 2560, ESP32-S3 AI camera</li>
+            <li>
+              **Sensors:** Proximity, IR, break-beam, ultrasonic, weight,
+              moisture
+            </li>
+            <li>**Actuators:** Vibration motor, servo, stepper motor</li>
+            <li>**Power:** Solar panel</li>
+            <li>**Mechanical:** Conveyor belt kit, hopper</li>
+          </ul>
+        </section>
+
+        <section>
+          <h3>How It Works</h3>
+          <ol>
+            <li>
+              **Entry:** Items are placed into the hopper and enter the system
+              via the conveyor.
+            </li>
+            <li>
+              **Classification:** A combination of sensors and the **ESP32-S3 AI
+              camera** classify the waste into Dry, Wet, Metal, or Unknown.
+            </li>
+            <li>
+              **Sorting:** Motors actuate the sorting gates, directing the item
+              to the correct bin.
+            </li>
+            <li>
+              **Reporting:** The system updates the dashboard with real-time
+              data on bin levels and waste distribution.
+            </li>
+          </ol>
+        </section>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>© <span id="year3"></span> BrainBin</div>
+        <div class="socials">Hardware list available</div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

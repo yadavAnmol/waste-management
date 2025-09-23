@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>BrainBin</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <img src="logos/logo.jpg" alt="Logo" class="logo" />
+        <button
+          class="hamburger"
+          id="hamburger-btn"
+          aria-label="Toggle navigation menu"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <nav class="main-nav" id="main-nav">
+          <a href="index.html" class="active">Home</a>
+          <a href="dashboard.html">Dashboard</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container hero-grid">
+          <div class="hero-text">
+            <h1>Automated sorting, smarter recycling.</h1>
+            <p>
+              Our Smart Waste Management System uses advanced sensors, motors,
+              and an **ESP32-S3 AI camera** to efficiently classify and sort
+              waste into four categories: Dry, Wet, Metal, and Unknown. The
+              system is powered by solar energy and controlled by an **Arduino
+              Mega 2560**, making it an ideal solution for remote and
+              sustainable waste management.
+            </p>
+            <a class="btn" href="dashboard.html">View Dashboard</a>
+          </div>
+          <div class="hero-visual">
+            <img
+              src="logos/logo.jpg"
+              alt="Smart Waste Management System Bins"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="features container">
+        <h3>Key Components</h3>
+        <div class="cards">
+          <div class="card">
+            <h4>Sensors & AI Vision</h4>
+            <p>
+              Proximity, IR, break-beam, ultrasonic, weight, and moisture
+              sensors work in tandem with the **ESP32-S3 AI camera** for robust
+              waste detection and classification.
+            </p>
+          </div>
+          <div class="card">
+            <h4>Sorting Actuators</h4>
+            <p>
+              Our system uses a combination of vibration, servo, and stepper
+              motors to accurately drive the sorting mechanisms and conveyor
+              belt.
+            </p>
+          </div>
+          <div class="card">
+            <h4>Control & Power</h4>
+            <p>
+              The entire operation is controlled by the **Arduino Mega 2560**
+              and powered by a solar panel, ensuring reliability and energy
+              independence.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>© <span id="year"></span> BrainBin</div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
