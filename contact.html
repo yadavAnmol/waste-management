@@ -1,58 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Contact — BrainBin</title>
     <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
     <header class="site-header">
-      <div class="container nav-wrap">
-        <img src="logos/logo.jpg" alt="Logo" class="logo" />
-        <button
-          class="hamburger"
-          id="hamburger-btn"
-          aria-label="Toggle navigation menu"
-        >
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
-        <nav class="main-nav" id="main-nav">
-          <a href="index.html">Home</a>
-          <a href="dashboard.html">Dashboard</a>
-          <a href="about.html">About</a>
-          <a href="contact.html" class="active">Contact</a>
-        </nav>
-      </div>
+        <div class="container nav-wrap">
+            <img src="logos/logo.jpg" alt="Logo" class="logo" />
+            <button class="hamburger" id="hamburger-btn" aria-label="Toggle navigation menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav class="main-nav" id="main-nav">
+                <a href="index.html">Home</a>
+                <a href="dashboard.html">Dashboard</a>
+                <a href="about.html">About</a>
+                <a href="contact.html" class="active">Contact</a>
+            </nav>
+        </div>
     </header>
 
     <main class="container contact-page">
-      <h2>Contact Us</h2>
-      <p>
-        Have a question about the project or interested in collaborating? Fill
-        out the form below and we'll get back to you as soon as possible.
-      </p>
-      <form id="contactForm" class="contact-form">
-        <label for="name">Name</label>
-        <input type="text" id="name" required />
-        <label for="email">Email</label>
-        <input type="email" id="email" required />
-        <label for="message">Message</label>
-        <textarea id="message" rows="6" required></textarea>
-        <button class="btn" type="submit">Send Message</button>
-        <div id="formStatus" class="muted"></div>
-      </form>
+        <h2>Get in Touch</h2>
+        <div class="contact-grid">
+            <div class="contact-info-card card">
+                <h3>Contact Information</h3>
+                <p>Have a question or interested in collaborating? We'd love to hear from you. You can reach out to us via the contact form or directly using the details below.</p>
+                <ul class="contact-list">
+                    <li><i class="fas fa-envelope-open-text icon"></i> <strong>Email:</strong> <a href="mailto:contact@brainbin.com">contact@brainbin.com</a></li>
+                    <li><i class="fas fa-map-marker-alt icon"></i> <strong>Address:</strong> 123 Tech Lane, Innovation City, 45678</li>
+                    <li><i class="fas fa-phone-alt icon"></i> <strong>Phone:</strong> (123) 456-7890</li>
+                </ul>
+            </div>
+            <div class="contact-form-card card">
+                <form id="contactForm" class="contact-form">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" required />
+                    <label for="email">Email</label>
+                    <input type="email" id="email" required />
+                    <label for="message">Message</label>
+                    <textarea id="message" rows="6" required></textarea>
+                    <button class="btn" type="submit">Send Message</button>
+                    <div id="formStatus" class="muted"></div>
+                </form>
+            </div>
+        </div>
     </main>
 
     <footer class="site-footer">
-      <div class="container footer-grid">
-        <div>© <span id="year4"></span> BrainBin</div>
-        <div class="socials">Thanks for reaching out</div>
-      </div>
+        <div class="container footer-grid">
+            <div>© <span id="year4"></span> BrainBin</div>
+            <div class="socials">Thanks for reaching out</div>
+        </div>
     </footer>
-
     <script src="script.js"></script>
-  </body>
+</body>
 </html>
